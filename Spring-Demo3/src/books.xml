@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<bean id="book1" class="com.beans.Book">
+		<constructor-arg value="CJ566"/>
+		<constructor-arg value="Core Java"/>
+		<constructor-arg value="980"/>
+	</bean>
+	<bean id="book2" class="com.beans.Book">
+		<constructor-arg value="CJ566"/>
+		<constructor-arg value="Core Java"/>
+		<constructor-arg value="980"/>
+	</bean>
+	
+	<bean id="book3" class="com.beans.Book">
+		<constructor-arg value="AJ567"/>
+		<constructor-arg value="Advanced Java"/>
+		<constructor-arg value="1080"/>
+	</bean>
+	<bean id="book4" class="com.beans.Book">
+		<constructor-arg value="Spring78"/>
+		<constructor-arg value="Learn Spring"/>
+		<constructor-arg value="2000"/>
+	</bean>
+	
+	<!--
+	<bean id="bookLibraryList" class="com.beans.LibraryList">
+		<property name="books">
+			<list>
+				<ref bean="book1"/>
+				<ref bean="book2"/>
+				<ref bean="book3"/>
+				<ref bean="book4"/>
+			</list>
+		</property>
+	</bean>
+	  -->
+	  
+	  <!-- 
+	  <bean id="bookLibrarySet" class="com.beans.LibrarySet">
+		<property name="books">
+			<set>
+				<ref bean="book1"/>
+				<ref bean="book2"/>
+				<ref bean="book3"/>
+				<ref bean="book4"/>
+			</set>
+		</property>
+	</bean>
+	-->
+	<!-- 
+	<bean id="bookLibraryMap" class="com.beans.LibraryMap">
+		<property name="books">
+			<map>
+				<entry key="Basic Java" value-ref="book1"/>
+				<entry key="Basic Java" value-ref="book2"/>
+				<entry key="Advanced Java Concept" value-ref="book3"/>
+				<entry key="Spring From Scratch" value-ref="book4"/>
+			</map>
+		</property>
+	</bean>
+	-->
+	<!-- 
+	<bean id="bookLibraryMapList" class="com.beans.LibraryMapList">
+		<property name="books">
+			<map>
+				<entry key="Basic Java"> 
+					<list>
+						<ref bean="book1"/>
+					</list>
+				</entry>
+				<entry key="Basic Java"> 
+					<list>
+						<ref bean="book2"/>
+					</list>
+				</entry>
+				<entry key="Advanced Java">
+					<list>
+						<ref bean="book3"/>
+					</list>
+				</entry>
+				<entry key="Spring From Scratch">
+					<list>
+						<ref bean="book4"/>
+					</list>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	-->
+	  	
+</beans>

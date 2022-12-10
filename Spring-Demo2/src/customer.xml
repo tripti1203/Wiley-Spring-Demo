@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<!-- 
+	<bean id="cust1" class="com.beans.Customer">
+		<property name = "customerId" value="101"/>
+		
+		<property name = "customerName" value="Alan"/>
+		
+		<property name = "customerAddress" ref="address1"/>
+		
+
+	</bean>
+	
+	<bean id="cust2" class="com.beans.Customer">
+		<property name = "customerId" value="102"/>
+		
+		<property name = "customerName" value="John"/>
+		
+		<property name = "customerAddress" ref="address2"/>
+		
+
+	</bean>
+
+	<bean id="address1" class="com.beans.Address">
+		<property name = "buildingName" value="Vishesh Heights"/>
+		<property name = "areaName" value="RK Nagar"/>
+		<property name = "cityName" value ="Pune"/>
+	</bean>
+	
+	<bean id="address2" class="com.beans.Address">
+		<property name = "buildingName" value="Vardaan Complex"/>
+		<property name = "areaName" value="Bidhannagar"/>
+		<property name = "cityName" value ="Kolkata"/>
+	</bean>
+	-->
+	
+	<bean id="cars" class="com.beans.Cars">
+		<constructor-arg value="111"/>
+		<constructor-arg value="Tata"/>
+		<constructor-arg value="Black"/>
+	</bean>
+	
+	
+	<bean id="cars" class="com.beans.Cars">
+		<constructor-arg value="112"/>
+		<constructor-arg value="Tata"/>
+		<constructor-arg value="White"/>
+	</bean>
+	
+	
+</beans>

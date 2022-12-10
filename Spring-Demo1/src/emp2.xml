@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<bean id="emp1" class="com.beans.Employee">
+		<property name = "empId" value="102"/>
+		<!-- push the value of empId to setEmpID (Setter Injection) -->
+		
+		<property name = "empName" value="Kochhar"/>
+		<!-- push the value of empName to setEmpID (Setter Injection) -->
+		
+		<property name = "empDept" value ="Technology"/>
+		<!-- push the value of empDept to setEmpID (Setter Injection) -->
+
+	</bean>
+	
+	<bean id="emp2" class="com.beans.Employee">
+		<property name = "empId" value="103"/>
+		<property name = "empName" value="King"/>
+		<property name = "empDept" value ="Technology"/>
+	</bean>
+	
+</beans>
